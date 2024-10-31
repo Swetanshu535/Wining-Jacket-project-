@@ -1,0 +1,28 @@
+create database ecommerce_winter_jacket;
+
+use ecommerce_winter_jacket;
+
+-- Show the title of the product which are jacket 
+select title,type
+from winter_jacket
+where type= "Jacket";
+
+-- Show where the data for lastupdated is null
+select * from winter_jacket
+where lastUpdated= 0;
+
+-- Show the total of price and round the result 
+select round(sum(price))
+from winter_jacket;
+
+-- Show the products which have price between 30 to 100
+select * from winter_jacket
+where price between 30 and 100;
+
+-- SHow the available Text for the coat type 
+select availableText from winter_jacket
+where type= "Coat";
+
+-- Show the title and the item location 
+select title,itemLocation from winter_jacket;
+
